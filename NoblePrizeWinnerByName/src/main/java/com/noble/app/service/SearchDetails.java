@@ -13,11 +13,21 @@ import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * The Class SearchDetails.
+ */
 @Service
 public class SearchDetails {
 
+	/** The firstname. */
 	static String firstname;
 
+	/**
+	 * Gets the details.
+	 *
+	 * @param str the str
+	 * @return the details
+	 */
 	public String getDetails(String str) {
 
 		JSONParser jsonParser = new JSONParser();

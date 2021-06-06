@@ -15,12 +15,25 @@ import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+
+/**
+ * The Class SearchByYear.
+ */
 @Service
 public class SearchByYear {
 
+	/** The firstname. */
 	static String firstname;
+	
+	/** The maa. */
 	public static Map<String, String> maa = new HashMap<>();
 
+	/**
+	 * Gets the details.
+	 *
+	 * @param yr the yr
+	 * @return the details
+	 */
 	public Map<String, String> getDetails(String yr) {
 
 		JSONParser jsonParser = new JSONParser();
